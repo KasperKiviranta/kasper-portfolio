@@ -1,0 +1,73 @@
+.contact h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form {
+  background: var(--surface);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.field label {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.field input,
+.field textarea {
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: var(--background);
+  color: var(--on-background);
+  font-family: inherit;
+}
+
+.field input:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.button {
+  background: var(--primary);
+  color: var(--on-primary);
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.button:hover:not(:disabled) {
+  background: var(--primary-variant);
+}
+
+.button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.success {
+  color: #4caf50;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 1rem;
+}
